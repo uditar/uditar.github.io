@@ -1,0 +1,500 @@
+{ 
+  "links": [
+  {
+    "source": "Civilian",
+    "target": "Holocaust",
+    "value": "1693000"
+  },
+  {
+    "source": "Civilian",
+    "target": "Non Holocaust",
+    "value": "17652600"
+  },
+  {
+    "source": "Military",
+    "target": "Killed",
+    "value": "8528831"
+  },
+  {
+    "source": "Military",
+    "target": "Prisoner or Missing",
+    "value": "7750919"
+  },
+  {
+    "source": "Military",
+    "target": "Wounded",
+    "value": "21189154"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Austria-Hungary",
+    "value": "315000"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Belgium",
+    "value": "0"
+  },
+  {
+    "source": "Holocaust",
+    "target": "British Empire",
+    "value": "0"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Bulgaria",
+    "value": "48000"
+  },
+  {
+    "source": "Holocaust",
+    "target": "France",
+    "value": "65000"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Germany",
+    "value": "165000"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Greece",
+    "value": "65000"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Italy",
+    "value": "0"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Japan",
+    "value": "0"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Montenegro",
+    "value": "0"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Portugal",
+    "value": "0"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Romania",
+    "value": "35000"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Russia",
+    "value": "1000000"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Serbia",
+    "value": "0"
+  },
+  {
+    "source": "Holocaust",
+    "target": "Turkey",
+    "value": "0"
+  },
+  {
+    "source": "Holocaust",
+    "target": "United States",
+    "value": "0"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Austria-Hungary",
+    "value": "88700"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Belgium",
+    "value": "74000"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "British Empire",
+    "value": "67100"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Bulgaria",
+    "value": "3000"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "France",
+    "value": "285000"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Germany",
+    "value": "2002000"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Greece",
+    "value": "457500"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Italy",
+    "value": "155600"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Japan",
+    "value": "730000"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Montenegro",
+    "value": "0"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Portugal",
+    "value": "40000"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Romania",
+    "value": "498000"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Russia",
+    "value": "13250000"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Serbia",
+    "value": "0"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "Turkey",
+    "value": "0"
+  },
+  {
+    "source": "Non Holocaust",
+    "target": "United States",
+    "value": "1700"
+  },
+  {
+    "source": "Killed",
+    "target": "Austria-Hungary",
+    "value": "1200000"
+  },
+  {
+    "source": "Killed",
+    "target": "Belgium",
+    "value": "13716"
+  },
+  {
+    "source": "Killed",
+    "target": "British Empire",
+    "value": "908371"
+  },
+  {
+    "source": "Killed",
+    "target": "Bulgaria",
+    "value": "87500"
+  },
+  {
+    "source": "Killed",
+    "target": "France",
+    "value": "1357800"
+  },
+  {
+    "source": "Killed",
+    "target": "Germany",
+    "value": "1773700"
+  },
+  {
+    "source": "Killed",
+    "target": "Greece",
+    "value": "5000"
+  },
+  {
+    "source": "Killed",
+    "target": "Italy",
+    "value": "650000"
+  },
+  {
+    "source": "Killed",
+    "target": "Japan",
+    "value": "300"
+  },
+  {
+    "source": "Killed",
+    "target": "Montenegro",
+    "value": "3000"
+  },
+  {
+    "source": "Killed",
+    "target": "Portugal",
+    "value":  "7222"
+  },
+  {
+    "source": "Killed",
+    "target": "Romania",
+    "value": "335706"
+  },
+  {
+    "source": "Killed",
+    "target": "Russia",
+    "value":  "1700000"
+  },
+  {
+    "source": "Killed",
+    "target": "Serbia",
+    "value": "45000"
+  },
+  {
+    "source": "Killed",
+    "target": "Turkey",
+    "value": "325000"
+  },
+  {
+    "source": "Killed",
+    "target": "United States",
+    "value": "116516"
+  },
+   {
+    "source": "Wounded",
+    "target": "Austria-Hungary",
+    "value": "3620000"
+  },
+  {
+    "source": "Wounded",
+    "target": "Belgium",
+    "value": "44686"
+  },
+  {
+    "source": "Wounded",
+    "target": "British Empire",
+    "value": "2090212"
+  },
+  {
+    "source": "Wounded",
+    "target": "Bulgaria",
+    "value": "152390"
+  },
+  {
+    "source": "Wounded",
+    "target": "France",
+    "value": "4266000"
+  },
+  {
+    "source": "Wounded",
+    "target": "Germany",
+    "value": "4216058"
+  },
+  {
+    "source": "Wounded",
+    "target": "Greece",
+    "value": "21000"
+  },
+  {
+    "source": "Wounded",
+    "target": "Italy",
+    "value": "947000"
+  },
+  {
+    "source": "Wounded",
+    "target": "Japan",
+    "value": "907"
+  },
+  {
+    "source": "Wounded",
+    "target": "Montenegro",
+    "value": "10000"
+  },
+  {
+    "source": "Wounded",
+    "target": "Portugal",
+    "value":  "13751"
+  },
+  {
+    "source": "Wounded",
+    "target": "Romania",
+    "value": "120000"
+  },
+  {
+    "source": "Wounded",
+    "target": "Russia",
+    "value":  "4950000"
+  },
+  {
+    "source": "Wounded",
+    "target": "Serbia",
+    "value": "133148"
+  },
+  {
+    "source": "Wounded",
+    "target": "Turkey",
+    "value": "400000"
+  },
+  {
+    "source": "Wounded",
+    "target": "United States",
+    "value": "204002"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Austria-Hungary",
+    "value": "2200000"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Belgium",
+    "value": "34659"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "British Empire",
+    "value": "191652"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Bulgaria",
+    "value": "27029"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "France",
+    "value": "537000"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Germany",
+    "value": "1152800"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Greece",
+    "value": "1000"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Italy",
+    "value": "600000"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Japan",
+    "value": "3"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Montenegro",
+    "value": "7000"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Portugal",
+    "value":  "12318"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Romania",
+    "value": "80000"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Russia",
+    "value":  "2500000"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Serbia",
+    "value": "152958"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "Turkey",
+    "value": "250000"
+  },
+  {
+    "source": "Prisoner or Missing",
+    "target": "United States",
+    "value": "4500"
+  }
+],
+
+"nodes": [
+  {
+    "name": "Military"
+  },
+  {
+    "name": "Civilian"
+  },
+  {
+    "name": "Killed"
+  },
+  {
+    "name": "Wounded"
+  },
+  {
+    "name": "Prisoner or Missing"
+  },
+  {
+    "name": "Holocaust"
+  },
+  {
+    "name": "Non Holocaust"
+  },
+  {
+    "name": "Russia"
+  },
+  {
+    "name": "British Empire"
+  },
+  {
+    "name": "France"
+  },
+  {
+    "name": "Italy"
+  },
+  {
+    "name": "United States"
+  },
+  {
+    "name": "Japan"
+  },
+  {
+    "name": "Romania"
+  },
+  {
+    "name": "Serbia"
+  },
+  {
+    "name": "Belgium"
+  },
+  {
+    "name": "Greece"
+  },
+  {
+    "name": "Portugal"
+  },
+  {
+    "name": "Montenegro"
+  },
+  {
+    "name": "Germany"
+  },
+  {
+    "name": "Austria-Hungary"
+  },
+  {
+    "name": "Turkey"
+  },
+  {
+    "name": "Bulgaria"
+  }
+] }

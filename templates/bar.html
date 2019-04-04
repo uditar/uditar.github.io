@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<style>
+
+.rectangle {
+	fill: #2274A5;
+}
+.rectangle:hover {
+	fill: orange;
+}
+.rectangle
+{
+    border-width: 1px;
+    border-color:black;
+    border-style:solid;
+}
+.axis {
+  font: 2 px sans-serif;
+  color :white;
+}
+
+.axis text{
+    color :white;
+}
+.axis path,
+.axis line {
+  fill: black;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+.dropdown{
+    margin-left: 425px !important;
+    margin-bottom:80px !important;
+    float:left;
+}
+
+.pict
+{
+  text-align:center; 
+}
+
+ 
+ 
+</style>
+</head>
+<body>
+<div id="drop" align=center></div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var margin = {top: 80, right: 100, bottom: 120, left: 100},
+    width = 960 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+
+var svg = d3.select("body").append("svg")
+	.attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+	.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("../data/TotalDeaths.csv", function(error, data){
+
+	// return data
+	var data = data.filter(function(d){return d;});
+    //filter out % column
+	var elements = Object.keys(data[0])
+		.filter(function(d){
+			return ((d != "Casualties as % of Forces"));
+		});
+	var selection = elements[0];
+
+	var y = d3.scale.linear()
+			.domain([0, d3.max(data, function(d){
+				return +d[selection];
+			})])
+			.range([height, 0]);
+
+	var x = d3.scale.ordinal()
+			.domain(data.map(function(d){ return d.Country;}))
+			.rangeBands([0, width]);
+
+
+	var xAxis = d3.svg.axis()
+		.scale(x)
+	    .orient("bottom");
+
+	var yAxis = d3.svg.axis()
+		.scale(y)
+	    .orient("left");
+
+	svg.append("g")
+    	.attr("class", "x axis")
+    	.attr("transform", "translate(0," + height + ")")
+    	.call(xAxis)
+    	.selectAll("text")
+    	.style("font-size", "15px")
+        .style("fill", "white")
+      	.style("text-anchor", "end")
+      	.attr("dx", "-.8em")
+      	.attr("dy", "-.55em")
+      	.attr("transform", "rotate(-90)" );
+
+
+ 	svg.append("g")
+    	.attr("class", "y axis")
+        .style("font-size", "15px")
+        .style("fill", "white")
+    	.call(yAxis);
+
+	svg.selectAll("rectangle")
+		.data(data)
+		.enter()
+		.append("rect")
+		.attr("class","rectangle")
+		.attr("width", width/data.length)
+        .style("stroke", "black")
+       	.style("stroke-width", 1.5)
+		.attr("height", function(d){
+			return height - y(+d[selection]);
+		})
+		.attr("x", function(d, i){
+			return (width / data.length) * i ;
+		})
+		.attr("y", function(d){
+			return y(+d[selection]);
+		})
+		.append("title")
+		.text(function(d){
+			return d.Country + " : " + d[selection];
+		});
+
+	var selector = d3.select("#drop")
+    	.append("select")
+    	.attr("id","dropdown")
+        .attr("class","dropdown")
+    	.on("change", function(d){
+        	selection = document.getElementById("dropdown");
+
+        	y.domain([0, d3.max(data, function(d){
+				return +d[selection.value];})]);
+
+        	yAxis.scale(y);
+
+        	d3.selectAll(".rectangle")
+           		.transition()
+	            .attr("height", function(d){
+					return height - y(+d[selection.value]);
+				})
+				.attr("x", function(d, i){
+					return (width / data.length) * i ;
+				})
+				.attr("y", function(d){
+					return y(+d[selection.value]);
+				})
+           		.ease("linear")
+           		.select("title")
+           		.text(function(d){
+           			return d.Country + " : " + d[selection.value];
+           		});
+      
+           	d3.selectAll("g.y.axis")
+           		.transition()
+           		.call(yAxis);
+        
+         });
+    
+
+    selector.selectAll("option")
+      .data(elements)
+      .enter().append("option")
+      .attr("value", function(d){
+        return d;
+      })
+      .text(function(d){
+        return d;
+      })
+    
+   
+
+});
+
+</script>
+</body>
